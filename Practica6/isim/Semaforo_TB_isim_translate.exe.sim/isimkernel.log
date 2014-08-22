@@ -1,0 +1,29 @@
+Command line:
+   Semaforo_TB_isim_translate.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56109
+
+Sat Feb 22 19:39:00 2014
+
+
+ Elaboration Time: 0.0936 sec
+
+ Current Memory Usage: 652.927 Meg
+
+ Total Signals          : 911
+ Total Nets             : 560
+ Total Signal Drivers   : 537
+ Total Blocks           : 175
+ Total Primitive Blocks : 98
+ Total Processes        : 537
+ Total Traceable Variables  : 1242
+ Total Scalar Nets and Variables : 8605
+Total Line Count : 1148
+
+ Total Simulation Time: 0.1248 sec
+
+ Current Memory Usage: 967.5 Meg
+
+Sat Feb 22 19:40:04 2014
+

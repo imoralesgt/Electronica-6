@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter.xst" -ofn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter.xst" -ofn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3N counter.ngc counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3N -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o counter_map.ncd counter.ngd counter.pcf 
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm counter -w -dir netgen/translate -ofmt vhdl -sim counter.ngd counter_translate.vhd 
+xst -intstyle ise -ifn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter.xst" -ofn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter.xst" -ofn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter.syr" 
+xst -intstyle ise -ifn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter.xst" -ofn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter.syr" 

@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica8/DCMcontroller.xst" -ofn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica8/DCMcontroller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3N DCMcontroller.ngc DCMcontroller.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm DCMcontroller -w -dir netgen/translate -ofmt vhdl -sim DCMcontroller.ngd DCMcontroller_translate.vhd 

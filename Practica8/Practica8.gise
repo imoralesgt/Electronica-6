@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Practica8.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CMT_TB_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CMT_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="CMT_TB_isim_beh.wdb"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CMT_TB_isim_translate.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="CMT_TB_isim_translate.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CMT_TB_translate.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="DCMcontroller.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="DCMcontroller.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="DCMcontroller.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="DCMcontroller.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="DCMcontroller.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="DCMcontroller.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DCMcontroller.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="DCMcontroller.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="DCMcontroller.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="DCMcontroller.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DCMcontroller_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="DCMcontroller_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DCMcontroller_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostTranslateSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostTranslateSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/translate/DCMcontroller_translate.nlf"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/translate/DCMcontroller_translate.vhd"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostTranslateSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1393128644" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1393128644">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128940" xil_pn:in_ck="-8015389894145817103" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1393128940">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CMT_TB.vhd"/>
+      <outfile xil_pn:name="DCMcontroller.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128671" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3085093943280589937" xil_pn:start_ts="1393128671">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128671" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8902648209274980851" xil_pn:start_ts="1393128671">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128644" xil_pn:in_ck="-2214209519700142084" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7934446134072416150" xil_pn:start_ts="1393128644">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/ipCore_DCM.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/ipCore_DCM/example_design/ipCore_DCM_exdes.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128940" xil_pn:in_ck="2071010746632671081" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1393128940">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CMT_TB.vhd"/>
+      <outfile xil_pn:name="DCMcontroller.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/ipCore_DCM.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/ipCore_DCM/example_design/ipCore_DCM_exdes.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128946" xil_pn:in_ck="2071010746632671081" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2982002728622746174" xil_pn:start_ts="1393128940">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CMT_TB_beh.prj"/>
+      <outfile xil_pn:name="CMT_TB_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128947" xil_pn:in_ck="2671901694246991016" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8774506065189426581" xil_pn:start_ts="1393128946">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CMT_TB_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128862" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1393128862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128862" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="173587693503898073" xil_pn:start_ts="1393128862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128862" xil_pn:in_ck="-2214209519700142084" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="7934446134072416150" xil_pn:start_ts="1393128862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/ipCore_DCM.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/ipCore_DCM/example_design/ipCore_DCM_exdes.vhd"/>
+    </transform>
+    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128862" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3429913313311842459" xil_pn:start_ts="1393128862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128862" xil_pn:in_ck="718062144733524459" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1393128862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128862" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="3353070016441351584" xil_pn:start_ts="1393128862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128870" xil_pn:in_ck="-8286601977943517600" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="7672123255257542991" xil_pn:start_ts="1393128862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="DCMcontroller.lso"/>
+      <outfile xil_pn:name="DCMcontroller.ngc"/>
+      <outfile xil_pn:name="DCMcontroller.ngr"/>
+      <outfile xil_pn:name="DCMcontroller.prj"/>
+      <outfile xil_pn:name="DCMcontroller.stx"/>
+      <outfile xil_pn:name="DCMcontroller.syr"/>
+      <outfile xil_pn:name="DCMcontroller.xst"/>
+      <outfile xil_pn:name="DCMcontroller_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128870" xil_pn:in_ck="-2139582050417255488" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="7419300597028931696" xil_pn:start_ts="1393128870">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128877" xil_pn:in_ck="3897899912434072318" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8514591202573230623" xil_pn:start_ts="1393128870">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="DCMcontroller.bld"/>
+      <outfile xil_pn:name="DCMcontroller.ngd"/>
+      <outfile xil_pn:name="DCMcontroller_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128881" xil_pn:in_ck="3897899912434072319" xil_pn:name="TRAN_postXlateSimModel" xil_pn:prop_ck="-7678381581922024281" xil_pn:start_ts="1393128877">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/translate/DCMcontroller_translate.nlf"/>
+      <outfile xil_pn:name="netgen/translate/DCMcontroller_translate.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128881" xil_pn:in_ck="2627288129096321387" xil_pn:name="TRAN_copyPost-TranslateAbstractToPreSimulation" xil_pn:start_ts="1393128881">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CMT_TB.vhd"/>
+      <outfile xil_pn:name="netgen/translate/DCMcontroller_translate.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128886" xil_pn:in_ck="2627288129096321387" xil_pn:name="TRAN_ISimulatePostTranslateModelRunFuse" xil_pn:prop_ck="6784282165881831006" xil_pn:start_ts="1393128881">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CMT_TB_isim_translate.exe"/>
+      <outfile xil_pn:name="CMT_TB_translate.prj"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1393128887" xil_pn:in_ck="-2308863188122985881" xil_pn:name="TRAN_ISimulatePostTranslateModel" xil_pn:prop_ck="7475579868792820118" xil_pn:start_ts="1393128886">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CMT_TB_isim_translate.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+  </transforms>
+
+</generated_project>

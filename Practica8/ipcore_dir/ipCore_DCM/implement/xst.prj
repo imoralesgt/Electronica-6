@@ -1,0 +1,2 @@
+vhdl work ../../ipCore_DCM.vhd
+vhdl work ../example_design/ipCore_DCM_exdes.vhd

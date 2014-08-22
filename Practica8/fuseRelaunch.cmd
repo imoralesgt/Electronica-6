@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Ivan/Desktop/fpgaE6Review/Practica8/CMT_TB_isim_beh.exe" -prj "C:/Users/Ivan/Desktop/fpgaE6Review/Practica8/CMT_TB_beh.prj" "work.CMT_TB" 

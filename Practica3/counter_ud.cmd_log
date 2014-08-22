@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter_ud.xst" -ofn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter_ud.syr" 

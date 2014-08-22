@@ -1,0 +1,29 @@
+Command line:
+   counter_TB_isim_translate.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  45637
+
+Sat Feb 22 17:02:37 2014
+
+
+ Elaboration Time: 0.078 sec
+
+ Current Memory Usage: 652.435 Meg
+
+ Total Signals          : 471
+ Total Nets             : 328
+ Total Signal Drivers   : 305
+ Total Blocks           : 106
+ Total Primitive Blocks : 62
+ Total Processes        : 305
+ Total Traceable Variables  : 752
+ Total Scalar Nets and Variables : 6121
+Total Line Count : 786
+
+ Total Simulation Time: 0.655203 sec
+
+ Current Memory Usage: 652.435 Meg
+
+Sat Feb 22 17:06:31 2014
+

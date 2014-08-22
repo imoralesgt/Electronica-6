@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Ivan/Desktop/fpgaE6Review/Practica8/CMT_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cmt_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/cmt_tb/clkin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkin</obj_property>
+      <obj_property name="ObjectShortName">clkin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmt_tb/clkout1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkout1</obj_property>
+      <obj_property name="ObjectShortName">clkout1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmt_tb/clkout2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkout2</obj_property>
+      <obj_property name="ObjectShortName">clkout2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmt_tb/clkout3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkout3</obj_property>
+      <obj_property name="ObjectShortName">clkout3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmt_tb/lockedout" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lockedout</obj_property>
+      <obj_property name="ObjectShortName">lockedout</obj_property>
+   </wvobject>
+</wave_config>

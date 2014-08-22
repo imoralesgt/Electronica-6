@@ -1,0 +1,22 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Ivan/Desktop/fpgaE6Review/Practica6/Semaforo_TB_isim_beh.exe -prj C:/Users/Ivan/Desktop/fpgaE6Review/Practica6/Semaforo_TB_beh.prj work.Semaforo_TB 
+ISim P.58f (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Ivan/Desktop/fpgaE6Review/Practica6/Semaforo.vhd" into library work
+Parsing VHDL file "C:/Users/Ivan/Desktop/fpgaE6Review/Practica6/Semaforo_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 106580 KB
+Fuse CPU Usage: 311 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity Semaforo [semaforo_default]
+Compiling architecture behavior of entity semaforo_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Built simulation executable C:/Users/Ivan/Desktop/fpgaE6Review/Practica6/Semaforo_TB_isim_beh.exe
+Fuse Memory Usage: 121088 KB
+Fuse CPU Usage: 421 ms

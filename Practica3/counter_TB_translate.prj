@@ -1,0 +1,2 @@
+vhdl work "netgen/translate/counter_translate.vhd"
+vhdl work "counter_TB.vhd"

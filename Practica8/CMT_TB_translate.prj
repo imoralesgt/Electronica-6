@@ -1,0 +1,2 @@
+vhdl work "netgen/translate/DCMcontroller_translate.vhd"
+vhdl work "CMT_TB.vhd"

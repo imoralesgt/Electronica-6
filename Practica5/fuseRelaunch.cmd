@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Ivan/Desktop/fpgaE6Review/Practica5/PWM_TB_isim_beh.exe" -prj "C:/Users/Ivan/Desktop/fpgaE6Review/Practica5/PWM_TB_beh.prj" "work.PWM_TB" 

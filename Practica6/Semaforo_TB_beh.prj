@@ -1,0 +1,2 @@
+vhdl work "Semaforo.vhd"
+vhdl work "Semaforo_TB.vhd"

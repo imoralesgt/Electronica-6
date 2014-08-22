@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica5/PWM.xst" -ofn "C:/Users/Ivan/Desktop/fpgaE6Review/Practica5/PWM.syr" 

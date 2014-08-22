@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Ivan/Desktop/fpgaE6Review/Practica6/Semaforo_TB_isim_beh.exe" -prj "C:/Users/Ivan/Desktop/fpgaE6Review/Practica6/Semaforo_TB_beh.prj" "work.Semaforo_TB" 

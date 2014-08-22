@@ -1,0 +1,3 @@
+vhdl work "ipcore_dir/ipCore_DCM.vhd"
+vhdl work "ipcore_dir/ipCore_DCM/example_design/ipCore_DCM_exdes.vhd"
+vhdl work "DCMcontroller.vhd"
