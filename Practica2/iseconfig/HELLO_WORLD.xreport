@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-08-21T19:46:52</DateModified>
+  <DateModified>2014-08-22T16:21:42</DateModified>
   <ModuleName>HELLO_WORLD</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica2/iseconfig/HELLO_WORLD.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica2</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica2\</ImplementationReportsDirectory>
   <DateInitialized>2014-08-21T19:46:49</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
