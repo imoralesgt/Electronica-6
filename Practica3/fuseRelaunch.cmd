@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter_TB_isim_translate.exe" -prj "C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/counter_TB_translate.prj" "work.counter_TB" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica3/counter_TB_isim_beh.exe" -prj "C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica3/counter_TB_beh.prj" "work.counter_TB" 

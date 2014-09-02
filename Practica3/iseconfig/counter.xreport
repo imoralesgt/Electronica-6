@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-02-23T11:48:06</DateModified>
+  <DateModified>2014-08-26T17:07:22</DateModified>
   <ModuleName>counter</ModuleName>
   <SummaryTimeStamp>2014-02-22T16:58:06</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Ivan/Desktop/fpgaE6Review/Practica3/iseconfig/counter.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Ivan/Desktop/fpgaE6Review/Practica3\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica3/iseconfig/counter.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica3\</ImplementationReportsDirectory>
   <DateInitialized>2014-02-22T16:58:18</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
