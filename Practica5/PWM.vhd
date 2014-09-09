@@ -13,7 +13,7 @@ entity PWM is
 			PWM_Resolution: Natural := 8
 				);
     Port ( 
-			  PWM_In : in  STD_LOGIC_VECTOR (PWM_Resolution-1 downto 0);
+		   PWM_In : in  STD_LOGIC_VECTOR (PWM_Resolution-1 downto 0);
            CLK : in  STD_LOGIC;
            RST : in  STD_LOGIC;
            Load : in  STD_LOGIC;

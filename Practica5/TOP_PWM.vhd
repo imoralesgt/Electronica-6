@@ -10,15 +10,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --Declaracion de Entidad TOP (puertos y genericos)
 entity TOP is
     Port ( PWM_Input   : in  STD_LOGIC_VECTOR (7 downto 0);
-           PWM_Loads   : in  STD_LOGIC_VECTOR (5 downto 0);
-           PWM_Outputs : out  STD_LOGIC_VECTOR (5 downto 0);
+           PWM_Loads   : in  STD_LOGIC_VECTOR (3 downto 0);
+           PWM_Outputs : out  STD_LOGIC_VECTOR (3 downto 0);
 			  CLKin       : in STD_LOGIC;
 			  RSTin       : in STD_LOGIC);
 end TOP;
 --Fin de Entidad
 
 --Inicia arquitectura de TOP
-architecture Behavioral of TOP is
+architecture Structural of TOP is
 --Declaracion de componentes a instanciar
 component PWM
 	 Generic( PWM_Resolution: Natural := 8
@@ -45,24 +45,9 @@ PWM0: PWM Port Map(
 			PWM_Out => PWM_Outputs(0)
 		);
 		
-PWM1: PWM Port Map(
-			PWM_In  => PWM_Input,
-			CLK	  => CLKin,
-			RST     => RSTin,
-			Load    => PWM_Loads(1),
-			PWM_Out => PWM_Outputs(1)
-		);	
-
-PWM2: PWM Port Map(
-			PWM_In  => PWM_Input,
-			CLK	  => CLKin,
-			RST     => RSTin,
-			Load    => PWM_Loads(2),
-			PWM_Out => PWM_Outputs(2)
-		);
-		
+	
 --Instanciando con "For...Generate"		
-PWM_x : for i in 3 to 5 generate
+PWM_x : for i in 1 to 3 generate
 	p: PWM Port Map(
 		PWM_In  => PWM_Input,
 			CLK	  => CLKin,
@@ -78,4 +63,4 @@ end generate PWM_x;
 --Aqui podria colocarse la logica cominacional/secuencia
 --que fuese necesaria. Aunque si se trabaja formalmente,
 --no es adecuado realizar ninguna operacion en el TOP.
-end Behavioral;
+end Structural;
