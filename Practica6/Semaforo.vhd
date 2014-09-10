@@ -22,58 +22,56 @@ architecture Behavioral of Semaforo is
 
 begin
 
-	process (clk)
+	process (clk, rst)
 	begin
-		if (rising_edge(clk)) then
-			if (rst = '1') then
-				current_state <= sRED;
-				delay <= 0;
-				RED <= '1';
-				GREEN <= '0';
-				YELLOW <= '0';
-			else
-				case current_state is
-					when sRED =>
-						if delay < RED_DELAY then
-							delay <= delay + 1;
-							current_state <= sRED;
-						else
-							delay <= 0;
-							current_state <= sGREEN;
-							RED <= '0';
-							GREEN <= '1';
-							YELLOW <= '0';
-						end if;
-					when sGREEN =>
-						if delay < GREEN_DELAY then
-							delay <= delay + 1;
-							current_state <= sGREEN;
-						else
-							delay <= 0;
-							current_state <= sYELLOW;
-							RED <= '0';
-							GREEN <= '0';
-							YELLOW <= '1';
-						end if;
-					when sYELLOW => 
-						if delay < YELLOW_DELAY then
-							delay <= delay + 1;
-							current_state <= sYELLOW;
-						else
-							delay <= 0;
-							current_state <= sRED;
-							RED <= '1';
-							GREEN <= '0';
-							YELLOW <= '0';
-						end if;
-					when others =>
-						current_state <= SRED;
+		if (rst = '1') then
+			current_state <= sRED;
+			delay <= 0;
+			RED <= '1';
+			GREEN <= '0';
+			YELLOW <= '0';
+		elsif (rising_edge(clk)) then
+			case current_state is
+				when sRED =>
+					if delay < RED_DELAY then
+						delay <= delay + 1;
+						current_state <= sRED;
+					else
 						delay <= 0;
+						current_state <= sGREEN;
+						RED <= '0';
+						GREEN <= '1';
+						YELLOW <= '0';
+					end if;
+				when sGREEN =>
+					if delay < GREEN_DELAY then
+						delay <= delay + 1;
+						current_state <= sGREEN;
+					else
+						delay <= 0;
+						current_state <= sYELLOW;
+						RED <= '0';
+						GREEN <= '0';
+						YELLOW <= '1';
+					end if;
+				when sYELLOW => 
+					if delay < YELLOW_DELAY then
+						delay <= delay + 1;
+						current_state <= sYELLOW;
+					else
+						delay <= 0;
+						current_state <= sRED;
 						RED <= '1';
 						GREEN <= '0';
 						YELLOW <= '0';
-				end case;
-			end if;
+					end if;
+				when others =>
+					current_state <= SRED;
+					delay <= 0;
+					RED <= '1';
+					GREEN <= '0';
+					YELLOW <= '0';
+			end case;
 		end if;
 	end process;
 
