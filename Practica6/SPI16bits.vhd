@@ -26,7 +26,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity SPI16bits is
 	 
-	 Generic(  busWidth : natural := 16;  -- 16 bits de datos
+	 Generic(  busWidth : natural := 8;  -- 16 bits de datos
 				  clkDiv   : natural := 3    -- Divisor de reloj (clkDiv+1)*2 = 8 (SPICLK = 12.5 MHz)
 			); 
 

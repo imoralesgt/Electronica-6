@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica6/SPI16bits.xst" -ofn "C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica6/SPI16bits.syr" 
+xst -intstyle ise -ifn "C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica6/SPI16bits.xst" -ofn "C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica6/SPI16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3N SPI16bits.ngc SPI16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3N -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SPI16bits_map.ncd SPI16bits.ngd SPI16bits.pcf 
+par -w -intstyle ise -ol high -mt off SPI16bits_map.ncd SPI16bits.ncd SPI16bits.pcf 
+trce -intstyle ise -v 3 -s 3N -n 3 -fastpaths -xml SPI16bits.twx SPI16bits.ncd -o SPI16bits.twr SPI16bits.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f SPI16bits.ut SPI16bits.ncd 

@@ -1,0 +1,525 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: SPI16bits.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SPI16bits.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SPI16bits"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3N-csg324
+
+---- Source Options
+Top Module Name                    : SPI16bits
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica6\SPI16bits.vhd" into library work
+Parsing entity <SPI16bits>.
+Parsing architecture <Behavioral> of entity <spi16bits>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <SPI16bits> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SPI16bits>.
+    Related source file is "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica6\SPI16bits.vhd".
+        busWidth = 8
+        clkDiv = 3
+    Found 1-bit register for signal <SCS>.
+    Found 1-bit register for signal <SPIClk>.
+    Found 1-bit register for signal <DONE>.
+    Found 1-bit register for signal <clkEN>.
+    Found 1-bit register for signal <SDATA>.
+    Found 8-bit register for signal <dataTemp>.
+    Found 2-bit register for signal <currentState>.
+    Found 2-bit register for signal <CLKCounter>.
+    Found 4-bit register for signal <dCount>.
+    Found finite state machine <FSM_0> for signal <currentState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | SPIClk (rising_edge)                           |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | data_fetch                                     |
+    | Power Up State     | data_fetch                                     |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit adder for signal <CLKCounter[1]_GND_4_o_add_1_OUT> created at line 65.
+    Found 4-bit adder for signal <dCount[3]_GND_4_o_add_6_OUT> created at line 103.
+    Found 1-bit 3-to-1 multiplexer for signal <currentState[1]_GND_4_o_Mux_13_o> created at line 86.
+    Found 2-bit comparator greater for signal <CLKCounter[1]_PWR_4_o_LessThan_1_o> created at line 64
+    Found 4-bit comparator greater for signal <dCount[3]_PWR_4_o_LessThan_6_o> created at line 99
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   9 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <SPI16bits> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 2-bit adder                                           : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 8
+ 1-bit register                                        : 5
+ 2-bit register                                        : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 2
+ 2-bit comparator greater                              : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 5
+ 1-bit 3-to-1 multiplexer                              : 1
+ 2-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <SPI16bits>.
+The following registers are absorbed into counter <CLKCounter>: 1 register on signal <CLKCounter>.
+The following registers are absorbed into counter <dCount>: 1 register on signal <dCount>.
+Unit <SPI16bits> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+# Comparators                                          : 2
+ 2-bit comparator greater                              : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 7
+ 1-bit 2-to-1 multiplexer                              : 5
+ 1-bit 3-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <currentState[1:2]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ data_fetch | 00
+ spi_out    | 01
+ resync     | 10
+------------------------
+
+Optimizing unit <SPI16bits> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SPI16bits, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : SPI16bits.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 23
+#      INV                         : 2
+#      LUT2                        : 2
+#      LUT3                        : 1
+#      LUT4                        : 4
+#      LUT5                        : 14
+# FlipFlops/Latches                : 21
+#      FDC                         : 11
+#      FDCE                        : 9
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 11
+#      OBUF                        : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3n 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              21  out of  18224     0%  
+ Number of Slice LUTs:                   23  out of   9112     0%  
+    Number used as Logic:                23  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     23
+   Number with an unused Flip Flop:       2  out of     23     8%  
+   Number with an unused LUT:             0  out of     23     0%  
+   Number of fully used LUT-FF pairs:    21  out of     23    91%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    232     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+SPIClk                             | NONE(dataTemp_1)       | 18    |
+CLK                                | BUFGP                  | 3     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.633ns (Maximum Frequency: 379.867MHz)
+   Minimum input arrival time before clock: 2.785ns
+   Maximum output required time after clock: 4.895ns
+   Maximum combinational path delay: 5.956ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SPIClk'
+  Clock period: 2.633ns (frequency: 379.867MHz)
+  Total number of paths / destination ports: 82 / 27
+-------------------------------------------------------------------------
+Delay:               2.633ns (Levels of Logic = 1)
+  Source:            currentState_FSM_FFd1 (FF)
+  Destination:       dataTemp_1 (FF)
+  Source Clock:      SPIClk rising
+  Destination Clock: SPIClk rising
+
+  Data Path: currentState_FSM_FFd1 to dataTemp_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.447   0.829  currentState_FSM_FFd1 (currentState_FSM_FFd1)
+     INV:I->O              9   0.206   0.829  _n0067<1>1_cepot_INV_0 (_n0067<1>1_cepot)
+     FDCE:CE                   0.322          dCount_2
+    ----------------------------------------
+    Total                      2.633ns (0.975ns logic, 1.658ns route)
+                                       (37.0% logic, 63.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.075ns (frequency: 481.870MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               2.075ns (Levels of Logic = 1)
+  Source:            SPIClk (FF)
+  Destination:       SPIClk (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: SPIClk to SPIClk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             20   0.447   1.321  SPIClk (SPIClk)
+     LUT3:I0->O            1   0.205   0.000  SPIClk_rstpot (SPIClk_rstpot)
+     FDC:D                     0.102          SPIClk
+    ----------------------------------------
+    Total                      2.075ns (0.754ns logic, 1.321ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SPIClk'
+  Total number of paths / destination ports: 29 / 29
+-------------------------------------------------------------------------
+Offset:              2.785ns (Levels of Logic = 1)
+  Source:            RST (PAD)
+  Destination:       dataTemp_1 (FF)
+  Destination Clock: SPIClk rising
+
+  Data Path: RST to dataTemp_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   1.222   1.133  RST_IBUF (RST_IBUF)
+     FDCE:CLR                  0.430          dataTemp_1
+    ----------------------------------------
+    Total                      2.785ns (1.652ns logic, 1.133ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.785ns (Levels of Logic = 1)
+  Source:            RST (PAD)
+  Destination:       CLKCounter_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RST to CLKCounter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   1.222   1.133  RST_IBUF (RST_IBUF)
+     FDC:CLR                   0.430          CLKCounter_0
+    ----------------------------------------
+    Total                      2.785ns (1.652ns logic, 1.133ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SPIClk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.647ns (Levels of Logic = 2)
+  Source:            clkEN (FF)
+  Destination:       SCLK (PAD)
+  Source Clock:      SPIClk rising
+
+  Data Path: clkEN to SCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.845  clkEN (clkEN)
+     LUT4:I1->O            1   0.205   0.579  Mmux_SCLK11 (SCLK_OBUF)
+     OBUF:I->O                 2.571          SCLK_OBUF (SCLK)
+    ----------------------------------------
+    Total                      4.647ns (3.223ns logic, 1.424ns route)
+                                       (69.4% logic, 30.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.895ns (Levels of Logic = 2)
+  Source:            SPIClk (FF)
+  Destination:       SCLK (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: SPIClk to SCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             20   0.447   1.093  SPIClk (SPIClk)
+     LUT4:I3->O            1   0.205   0.579  Mmux_SCLK11 (SCLK_OBUF)
+     OBUF:I->O                 2.571          SCLK_OBUF (SCLK)
+    ----------------------------------------
+    Total                      4.895ns (3.223ns logic, 1.672ns route)
+                                       (65.8% logic, 34.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Delay:               5.956ns (Levels of Logic = 3)
+  Source:            RST (PAD)
+  Destination:       SCLK (PAD)
+
+  Data Path: RST to SCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   1.222   1.381  RST_IBUF (RST_IBUF)
+     LUT4:I0->O            1   0.203   0.579  Mmux_SCLK11 (SCLK_OBUF)
+     OBUF:I->O                 2.571          SCLK_OBUF (SCLK)
+    ----------------------------------------
+    Total                      5.956ns (3.996ns logic, 1.960ns route)
+                                       (67.1% logic, 32.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.075|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SPIClk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SPIClk         |    2.633|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.62 secs
+ 
+--> 
+
+Total memory usage is 258076 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

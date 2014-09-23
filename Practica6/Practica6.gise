@@ -22,6 +22,41 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Practica6.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="SPI16bits.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="SPI16bits.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="SPI16bits.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="SPI16bits.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="SPI16bits.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="SPI16bits.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="SPI16bits.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="SPI16bits.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="SPI16bits.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="SPI16bits.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SPI16bits.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="SPI16bits.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SPI16bits.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SPI16bits.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="SPI16bits.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="SPI16bits.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="SPI16bits.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="SPI16bits.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="SPI16bits.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SPI16bits.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SPI16bits_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="SPI16bits_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="SPI16bits_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="SPI16bits_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="SPI16bits_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="SPI16bits_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SPI16bits_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SPI16bits_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="SPI16bits_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="SPI16bits_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SPI16bits_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SPI16bits_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SPI16bits_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="SPI16bits_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SPI16bits_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Semaforo.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Semaforo.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Semaforo.lso"/>
@@ -44,7 +79,11 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Semaforo_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Semaforo_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
@@ -59,6 +98,11 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
     <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/translate/Semaforo_translate.nlf"/>
     <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/translate/Semaforo_translate.vhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="spi16bits.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="spi16bits.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="spi16bits.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini">
       <branch xil_pn:name="BehavioralSim"/>
@@ -76,6 +120,10 @@
     <transform xil_pn:end_ts="1393179101" xil_pn:in_ck="5598829224666410626" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1393179101">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="SPI16bits.vhd"/>
       <outfile xil_pn:name="Semaforo.vhd"/>
       <outfile xil_pn:name="Semaforo_TB.vhd"/>
@@ -91,10 +139,16 @@
     <transform xil_pn:end_ts="1393179101" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="567957441701578042" xil_pn:start_ts="1393179101">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1393179101" xil_pn:in_ck="5598829224666410626" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1393179101">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="SPI16bits.vhd"/>
       <outfile xil_pn:name="Semaforo.vhd"/>
       <outfile xil_pn:name="Semaforo_TB.vhd"/>
@@ -102,7 +156,10 @@
     <transform xil_pn:end_ts="1393179109" xil_pn:in_ck="5598829224666410626" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6935900706800036466" xil_pn:start_ts="1393179101">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Semaforo_TB_beh.prj"/>
       <outfile xil_pn:name="Semaforo_TB_isim_beh.exe"/>
@@ -114,6 +171,7 @@
     <transform xil_pn:end_ts="1393179109" xil_pn:in_ck="-2442842787250510368" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8387220246860097509" xil_pn:start_ts="1393179109">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Semaforo_TB_isim_beh.wdb"/>
@@ -124,10 +182,108 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1393118787" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7606740300933175532" xil_pn:start_ts="1393118787">
+    <transform xil_pn:end_ts="1411512773" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8920999111333751866" xil_pn:start_ts="1411512773">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1411512773" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="3733420061234403939" xil_pn:start_ts="1411512773">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1411512773" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1411512773">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1411512773" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-4667929762971041400" xil_pn:start_ts="1411512773">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1411512773" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1411512773">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1411512773" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-3698457013310682259" xil_pn:start_ts="1411512773">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1411514432" xil_pn:in_ck="5428032271678581953" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7260725266442154148" xil_pn:start_ts="1411514419">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="SPI16bits.lso"/>
+      <outfile xil_pn:name="SPI16bits.ngc"/>
+      <outfile xil_pn:name="SPI16bits.ngr"/>
+      <outfile xil_pn:name="SPI16bits.prj"/>
+      <outfile xil_pn:name="SPI16bits.stx"/>
+      <outfile xil_pn:name="SPI16bits.syr"/>
+      <outfile xil_pn:name="SPI16bits.xst"/>
+      <outfile xil_pn:name="SPI16bits_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1411514432" xil_pn:in_ck="-6966985353893343" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="7209684440647092413" xil_pn:start_ts="1411514432">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1411514440" xil_pn:in_ck="3679854730017708718" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7634916701086665550" xil_pn:start_ts="1411514432">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SPI16bits.bld"/>
+      <outfile xil_pn:name="SPI16bits.ngd"/>
+      <outfile xil_pn:name="SPI16bits_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1411514452" xil_pn:in_ck="5347744244970693680" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="7527107346696654317" xil_pn:start_ts="1411514440">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="SPI16bits.pcf"/>
+      <outfile xil_pn:name="SPI16bits_map.map"/>
+      <outfile xil_pn:name="SPI16bits_map.mrp"/>
+      <outfile xil_pn:name="SPI16bits_map.ncd"/>
+      <outfile xil_pn:name="SPI16bits_map.ngm"/>
+      <outfile xil_pn:name="SPI16bits_map.xrpt"/>
+      <outfile xil_pn:name="SPI16bits_summary.xml"/>
+      <outfile xil_pn:name="SPI16bits_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1411514470" xil_pn:in_ck="8412297013794256070" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1411514452">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SPI16bits.ncd"/>
+      <outfile xil_pn:name="SPI16bits.pad"/>
+      <outfile xil_pn:name="SPI16bits.par"/>
+      <outfile xil_pn:name="SPI16bits.ptwx"/>
+      <outfile xil_pn:name="SPI16bits.unroutes"/>
+      <outfile xil_pn:name="SPI16bits.xpi"/>
+      <outfile xil_pn:name="SPI16bits_pad.csv"/>
+      <outfile xil_pn:name="SPI16bits_pad.txt"/>
+      <outfile xil_pn:name="SPI16bits_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1411514491" xil_pn:in_ck="-4981594635865719064" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1411514470">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SPI16bits.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="spi16bits.bgn"/>
+      <outfile xil_pn:name="spi16bits.bit"/>
+      <outfile xil_pn:name="spi16bits.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1411514470" xil_pn:in_ck="6131733749245843113" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817433" xil_pn:start_ts="1411514462">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SPI16bits.twr"/>
+      <outfile xil_pn:name="SPI16bits.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
     <transform xil_pn:end_ts="1393119518" xil_pn:in_ck="8978440266404429415" xil_pn:name="TRAN_copyPost-TranslateAbstractToPreSimulation" xil_pn:start_ts="1393119518">
       <status xil_pn:value="SuccessfullyRun"/>
