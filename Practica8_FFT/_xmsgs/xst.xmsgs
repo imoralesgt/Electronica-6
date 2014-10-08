@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="old" >"C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT\fftTOP.vhd" Line 42: &lt;<arg fmt="%s" index="1">fft</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT\fftTOP.vhd</arg>&quot; line <arg fmt="%s" index="2">88</arg>: Output port &lt;<arg fmt="%s" index="3">xn_index</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fftInstance</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT\fftTOP.vhd</arg>&quot; line <arg fmt="%s" index="2">88</arg>: Output port &lt;<arg fmt="%s" index="3">edone</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fftInstance</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT\fftTOP.vhd</arg>&quot; line <arg fmt="%s" index="2">88</arg>: Output port &lt;<arg fmt="%s" index="3">dv</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fftInstance</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+</messages>
+

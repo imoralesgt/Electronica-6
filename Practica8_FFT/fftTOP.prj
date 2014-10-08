@@ -1,0 +1,3 @@
+vhdl work "ipcore_dir/sqrt.vhd"
+vhdl work "ipcore_dir/fft.vhd"
+vhdl work "fftTOP.vhd"
