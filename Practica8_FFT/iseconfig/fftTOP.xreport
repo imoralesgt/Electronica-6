@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-10-07T18:10:19</DateModified>
+  <DateModified>2014-10-09T10:46:34</DateModified>
   <ModuleName>fftTOP</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica8_FFT/iseconfig/fftTOP.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica8_FFT</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica8_FFT\</ImplementationReportsDirectory>
   <DateInitialized>2014-10-07T17:05:16</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
