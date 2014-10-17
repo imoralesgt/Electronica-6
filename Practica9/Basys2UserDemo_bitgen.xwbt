@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\Basys2UserDemo.ncd
+OUTFILE=C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\Basys2UserDemo.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9
+LICENSE=WebPack
+USER_INFO=210695045_1777495548_210568663_469

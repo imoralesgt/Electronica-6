@@ -1,0 +1,650 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.55 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.55 secs
+ 
+--> Reading design: Basys2UserDemo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Basys2UserDemo.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Basys2UserDemo"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Basys2UserDemo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\DispCtrl.vhd" into library work
+Parsing entity <DispCtrl>.
+Parsing architecture <Behavioral> of entity <dispctrl>.
+Parsing VHDL file "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\Basys2UserDemoMain.vhd" into library work
+Parsing entity <Basys2UserDemo>.
+Parsing architecture <Structural> of entity <basys2userdemo>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Basys2UserDemo> (architecture <Structural>) from library <work>.
+
+Elaborating entity <DispCtrl> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\DispCtrl.vhd" Line 121: Assignment to hcnt ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\DispCtrl.vhd" Line 122: Assignment to vcnt ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\DispCtrl.vhd" Line 147: sw should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\DispCtrl.vhd" Line 154: sw should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\DispCtrl.vhd" Line 161: sw should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\DispCtrl.vhd" Line 168: sw should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\DispCtrl.vhd" Line 177: sw should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\DispCtrl.vhd" Line 186: sw should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\DispCtrl.vhd" Line 195: sw should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\DispCtrl.vhd" Line 206: sw should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Basys2UserDemo>.
+    Related source file is "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\Basys2UserDemoMain.vhd".
+    Summary:
+	no macro.
+Unit <Basys2UserDemo> synthesized.
+
+Synthesizing Unit <DispCtrl>.
+    Related source file is "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica9\DispCtrl.vhd".
+    Found 1-bit register for signal <ck25MHz>.
+    Found 10-bit register for signal <intHcnt>.
+    Found 10-bit register for signal <intVcnt>.
+    Found 1-bit register for signal <HS>.
+    Found 1-bit register for signal <VS>.
+    Found 1-bit register for signal <ck50MHz>.
+    Found 10-bit adder for signal <intVcnt[9]_GND_6_o_add_2_OUT> created at line 98.
+    Found 10-bit adder for signal <intHcnt[9]_GND_6_o_add_4_OUT> created at line 101.
+WARNING:Xst:737 - Found 1-bit latch for signal <outRed<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <outRed<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <outGreen<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <outGreen<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <outBlue<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <outBlue<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 10-bit comparator greater for signal <intHcnt[9]_PWR_6_o_LessThan_16_o> created at line 126
+    Found 10-bit comparator greater for signal <intVcnt[9]_GND_6_o_LessThan_17_o> created at line 126
+    Found 10-bit comparator greater for signal <GND_6_o_intVcnt[9]_LessThan_18_o> created at line 126
+    Found 10-bit comparator greater for signal <intHcnt[9]_GND_6_o_LessThan_19_o> created at line 146
+    Found 10-bit comparator greater for signal <GND_6_o_intHcnt[9]_LessThan_20_o> created at line 146
+    Found 10-bit comparator lessequal for signal <n0033> created at line 153
+    Found 10-bit comparator greater for signal <intHcnt[9]_GND_6_o_LessThan_24_o> created at line 153
+    Found 10-bit comparator lessequal for signal <n0039> created at line 160
+    Found 10-bit comparator greater for signal <intHcnt[9]_GND_6_o_LessThan_28_o> created at line 160
+    Found 10-bit comparator lessequal for signal <n0045> created at line 167
+    Found 10-bit comparator greater for signal <intHcnt[9]_GND_6_o_LessThan_32_o> created at line 167
+    Found 10-bit comparator lessequal for signal <n0051> created at line 176
+    Found 10-bit comparator greater for signal <intHcnt[9]_GND_6_o_LessThan_37_o> created at line 176
+    Found 10-bit comparator lessequal for signal <n0058> created at line 185
+    Found 10-bit comparator greater for signal <intHcnt[9]_GND_6_o_LessThan_42_o> created at line 185
+    Found 10-bit comparator lessequal for signal <n0065> created at line 194
+    Found 10-bit comparator greater for signal <intHcnt[9]_PWR_6_o_LessThan_47_o> created at line 194
+    Found 10-bit comparator lessequal for signal <n0072> created at line 205
+    Found 10-bit comparator greater for signal <intHcnt[9]_PWR_6_o_LessThan_53_o> created at line 205
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   6 Latch(s).
+	inferred  19 Comparator(s).
+	inferred  19 Multiplexer(s).
+Unit <DispCtrl> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 10-bit adder                                          : 2
+# Registers                                            : 6
+ 1-bit register                                        : 4
+ 10-bit register                                       : 2
+# Latches                                              : 6
+ 1-bit latch                                           : 6
+# Comparators                                          : 19
+ 10-bit comparator greater                             : 12
+ 10-bit comparator lessequal                           : 7
+# Multiplexers                                         : 19
+ 1-bit 2-to-1 multiplexer                              : 19
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <DispCtrl>.
+The following registers are absorbed into counter <intHcnt>: 1 register on signal <intHcnt>.
+The following registers are absorbed into counter <intVcnt>: 1 register on signal <intVcnt>.
+Unit <DispCtrl> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Comparators                                          : 19
+ 10-bit comparator greater                             : 12
+ 10-bit comparator lessequal                           : 7
+# Multiplexers                                         : 19
+ 1-bit 2-to-1 multiplexer                              : 19
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Basys2UserDemo> ...
+
+Optimizing unit <DispCtrl> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Basys2UserDemo, actual ratio is 1.
+FlipFlop DispCtrlInst/intHcnt_7 has been replicated 1 time(s)
+FlipFlop DispCtrlInst/intHcnt_8 has been replicated 1 time(s)
+Latch DispCtrlInst/outGreen_1 has been replicated 1 time(s) to handle iob=true attribute.
+Latch DispCtrlInst/outRed_1 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 26
+ Flip-Flops                                            : 26
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Basys2UserDemo.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 145
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 18
+#      LUT2                        : 17
+#      LUT3                        : 4
+#      LUT4                        : 17
+#      LUT5                        : 10
+#      LUT6                        : 37
+#      MUXCY                       : 18
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 34
+#      FD                          : 22
+#      FDR                         : 4
+#      LDC                         : 5
+#      LDCE_1                      : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 8
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              26  out of  18224     0%  
+ Number of Slice LUTs:                  105  out of   9112     1%  
+    Number used as Logic:               105  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    106
+   Number with an unused Flip Flop:      80  out of    106    75%  
+   Number with an unused LUT:             1  out of    106     0%  
+   Number of fully used LUT-FF pairs:    25  out of    106    23%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    232     8%  
+    IOB Flip Flops/Latches:               8
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------------------------+---------------------------------+-------+
+Clock Signal                                                                         | Clock buffer(FF name)           | Load  |
+-------------------------------------------------------------------------------------+---------------------------------+-------+
+DispCtrlInst/intHcnt[9]_GND_6_o_AND_25_o(DispCtrlInst/intHcnt[9]_GND_6_o_AND_25_o1:O)| NONE(*)(DispCtrlInst/outBlue_1) | 2     |
+DispCtrlInst/intHcnt[9]_GND_6_o_AND_4_o(DispCtrlInst/intHcnt[9]_GND_6_o_AND_4_o3:O)  | NONE(*)(DispCtrlInst/outGreen_2)| 3     |
+DispCtrlInst/intHcnt[9]_GND_6_o_OR_11_o(DispCtrlInst/intHcnt[9]_GND_6_o_OR_11_o1:O)  | NONE(*)(DispCtrlInst/outRed_1)  | 3     |
+DispCtrlInst/ck50MHz                                                                 | NONE(DispCtrlInst/ck25MHz)      | 1     |
+mclk                                                                                 | BUFGP                           | 1     |
+DispCtrlInst/ck25MHz                                                                 | BUFG                            | 24    |
+-------------------------------------------------------------------------------------+---------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.266ns (Maximum Frequency: 234.395MHz)
+   Minimum input arrival time before clock: 4.600ns
+   Maximum output required time after clock: 3.648ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DispCtrlInst/ck50MHz'
+  Clock period: 1.456ns (frequency: 686.884MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.456ns (Levels of Logic = 0)
+  Source:            DispCtrlInst/ck25MHz (FF)
+  Destination:       DispCtrlInst/ck25MHz (FF)
+  Source Clock:      DispCtrlInst/ck50MHz rising
+  Destination Clock: DispCtrlInst/ck50MHz rising
+
+  Data Path: DispCtrlInst/ck25MHz to DispCtrlInst/ck25MHz
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.579  DispCtrlInst/ck25MHz (DispCtrlInst/ck25MHz)
+     FDR:R                     0.430          DispCtrlInst/ck25MHz
+    ----------------------------------------
+    Total                      1.456ns (0.877ns logic, 0.579ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mclk'
+  Clock period: 1.493ns (frequency: 669.680MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.493ns (Levels of Logic = 0)
+  Source:            DispCtrlInst/ck50MHz (FF)
+  Destination:       DispCtrlInst/ck50MHz (FF)
+  Source Clock:      mclk rising
+  Destination Clock: mclk rising
+
+  Data Path: DispCtrlInst/ck50MHz to DispCtrlInst/ck50MHz
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.616  DispCtrlInst/ck50MHz (DispCtrlInst/ck50MHz)
+     FDR:R                     0.430          DispCtrlInst/ck50MHz
+    ----------------------------------------
+    Total                      1.493ns (0.877ns logic, 0.616ns route)
+                                       (58.7% logic, 41.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DispCtrlInst/ck25MHz'
+  Clock period: 4.266ns (frequency: 234.395MHz)
+  Total number of paths / destination ports: 608 / 26
+-------------------------------------------------------------------------
+Delay:               4.266ns (Levels of Logic = 3)
+  Source:            DispCtrlInst/intHcnt_3 (FF)
+  Destination:       DispCtrlInst/intVcnt_0 (FF)
+  Source Clock:      DispCtrlInst/ck25MHz rising
+  Destination Clock: DispCtrlInst/ck25MHz rising
+
+  Data Path: DispCtrlInst/intHcnt_3 to DispCtrlInst/intVcnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              15   0.447   1.210  DispCtrlInst/intHcnt_3 (DispCtrlInst/intHcnt_3)
+     LUT5:I2->O           13   0.205   0.933  DispCtrlInst/PWR_6_o_intHcnt[9]_equal_9_o<9>21 (DispCtrlInst/PWR_6_o_intHcnt[9]_equal_9_o<9>2)
+     LUT6:I5->O           10   0.205   0.961  DispCtrlInst/_n0224 (DispCtrlInst/_n0224)
+     LUT4:I2->O            1   0.203   0.000  DispCtrlInst/intVcnt_0_rstpot (DispCtrlInst/intVcnt_0_rstpot)
+     FD:D                      0.102          DispCtrlInst/intVcnt_0
+    ----------------------------------------
+    Total                      4.266ns (1.162ns logic, 3.104ns route)
+                                       (27.2% logic, 72.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DispCtrlInst/intHcnt[9]_GND_6_o_AND_25_o'
+  Total number of paths / destination ports: 9 / 2
+-------------------------------------------------------------------------
+Offset:              4.474ns (Levels of Logic = 4)
+  Source:            sw<1> (PAD)
+  Destination:       DispCtrlInst/outBlue_1 (LATCH)
+  Destination Clock: DispCtrlInst/intHcnt[9]_GND_6_o_AND_25_o falling
+
+  Data Path: sw<1> to DispCtrlInst/outBlue_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.924  sw_1_IBUF (sw_1_IBUF)
+     LUT6:I1->O            2   0.203   0.961  DispCtrlInst/Mmux_GND_6_o_GND_6_o_MUX_34_o11214 (DispCtrlInst/Mmux_GND_6_o_GND_6_o_MUX_34_o1121)
+     LUT5:I0->O            2   0.203   0.721  DispCtrlInst/Mmux_GND_6_o_GND_6_o_MUX_34_o1122 (DispCtrlInst/Mmux_GND_6_o_GND_6_o_MUX_34_o112)
+     LUT5:I3->O            1   0.203   0.000  DispCtrlInst/Mmux_GND_6_o_GND_6_o_MUX_64_o111 (DispCtrlInst/GND_6_o_GND_6_o_MUX_68_o)
+     LDC:D                     0.037          DispCtrlInst/outBlue_1
+    ----------------------------------------
+    Total                      4.474ns (1.868ns logic, 2.606ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DispCtrlInst/intHcnt[9]_GND_6_o_AND_4_o'
+  Total number of paths / destination ports: 14 / 3
+-------------------------------------------------------------------------
+Offset:              3.453ns (Levels of Logic = 3)
+  Source:            sw<1> (PAD)
+  Destination:       DispCtrlInst/outGreen_1 (LATCH)
+  Destination Clock: DispCtrlInst/intHcnt[9]_GND_6_o_AND_4_o rising
+
+  Data Path: sw<1> to DispCtrlInst/outGreen_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.924  sw_1_IBUF (sw_1_IBUF)
+     LUT6:I1->O            2   0.203   0.864  DispCtrlInst/Mmux_GND_6_o_GND_6_o_MUX_34_o11214 (DispCtrlInst/Mmux_GND_6_o_GND_6_o_MUX_34_o1121)
+     LUT6:I2->O            2   0.203   0.000  DispCtrlInst/Mmux_GND_6_o_GND_6_o_MUX_49_o111 (DispCtrlInst/GND_6_o_GND_6_o_MUX_55_o)
+     LDCE_1:D                  0.037          DispCtrlInst/outGreen_1
+    ----------------------------------------
+    Total                      3.453ns (1.665ns logic, 1.788ns route)
+                                       (48.2% logic, 51.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DispCtrlInst/intHcnt[9]_GND_6_o_OR_11_o'
+  Total number of paths / destination ports: 14 / 3
+-------------------------------------------------------------------------
+Offset:              4.600ns (Levels of Logic = 4)
+  Source:            sw<1> (PAD)
+  Destination:       DispCtrlInst/outRed_1 (LATCH)
+  Destination Clock: DispCtrlInst/intHcnt[9]_GND_6_o_OR_11_o falling
+
+  Data Path: sw<1> to DispCtrlInst/outRed_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.924  sw_1_IBUF (sw_1_IBUF)
+     LUT6:I1->O            2   0.203   0.961  DispCtrlInst/Mmux_GND_6_o_GND_6_o_MUX_34_o11214 (DispCtrlInst/Mmux_GND_6_o_GND_6_o_MUX_34_o1121)
+     LUT5:I0->O            2   0.203   0.845  DispCtrlInst/Mmux_GND_6_o_GND_6_o_MUX_34_o1122 (DispCtrlInst/Mmux_GND_6_o_GND_6_o_MUX_34_o112)
+     LUT6:I3->O            2   0.205   0.000  DispCtrlInst/Mmux_GND_6_o_GND_6_o_MUX_34_o111 (DispCtrlInst/GND_6_o_GND_6_o_MUX_39_o)
+     LDC:D                     0.037          DispCtrlInst/outRed_1
+    ----------------------------------------
+    Total                      4.600ns (1.870ns logic, 2.730ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DispCtrlInst/intHcnt[9]_GND_6_o_AND_25_o'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            DispCtrlInst/outBlue_2 (LATCH)
+  Destination:       OutBlue<2> (PAD)
+  Source Clock:      DispCtrlInst/intHcnt[9]_GND_6_o_AND_25_o falling
+
+  Data Path: DispCtrlInst/outBlue_2 to OutBlue<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.498   0.579  DispCtrlInst/outBlue_2 (DispCtrlInst/outBlue_2)
+     OBUF:I->O                 2.571          OutBlue_2_OBUF (OutBlue<2>)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DispCtrlInst/intHcnt[9]_GND_6_o_AND_4_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            DispCtrlInst/outGreen_2 (LATCH)
+  Destination:       OutGreen<2> (PAD)
+  Source Clock:      DispCtrlInst/intHcnt[9]_GND_6_o_AND_4_o rising
+
+  Data Path: DispCtrlInst/outGreen_2 to OutGreen<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCE_1:G->Q           1   0.498   0.579  DispCtrlInst/outGreen_2 (DispCtrlInst/outGreen_2)
+     OBUF:I->O                 2.571          OutGreen_2_OBUF (OutGreen<2>)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DispCtrlInst/intHcnt[9]_GND_6_o_OR_11_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            DispCtrlInst/outRed_2 (LATCH)
+  Destination:       OutRed<2> (PAD)
+  Source Clock:      DispCtrlInst/intHcnt[9]_GND_6_o_OR_11_o falling
+
+  Data Path: DispCtrlInst/outRed_2 to OutRed<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.498   0.579  DispCtrlInst/outRed_2 (DispCtrlInst/outRed_2)
+     OBUF:I->O                 2.571          OutRed_2_OBUF (OutRed<2>)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DispCtrlInst/ck25MHz'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            DispCtrlInst/HS (FF)
+  Destination:       HS (PAD)
+  Source Clock:      DispCtrlInst/ck25MHz rising
+
+  Data Path: DispCtrlInst/HS to HS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.616  DispCtrlInst/HS (DispCtrlInst/HS)
+     OBUF:I->O                 2.571          HS_OBUF (HS)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock DispCtrlInst/ck25MHz
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+DispCtrlInst/ck25MHz|    4.266|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DispCtrlInst/ck50MHz
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+DispCtrlInst/ck50MHz|    1.456|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DispCtrlInst/intHcnt[9]_GND_6_o_AND_25_o
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+DispCtrlInst/ck25MHz|         |         |    6.146|         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DispCtrlInst/intHcnt[9]_GND_6_o_AND_4_o
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+DispCtrlInst/ck25MHz|    5.751|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock DispCtrlInst/intHcnt[9]_GND_6_o_OR_11_o
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+DispCtrlInst/ck25MHz|         |         |    6.272|         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+mclk           |    1.493|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 17.19 secs
+ 
+--> 
+
+Total memory usage is 257888 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -35,7 +35,7 @@ entity DispCtrl is
 --        Hcnt: in std_logic_vector(9 downto 0);      -- horizontal counter
 --        Vcnt: in std_logic_vector(9 downto 0);      -- verical counter
 
-		  SW: in  std_logic_vector(7 downto 0);  -- switches para cambiar los colores
+		SW: in  std_logic_vector(7 downto 0);  -- switches para cambiar los colores
         HS: out std_logic;					-- horizontal synchro signal					
         VS: out std_logic;					-- verical synchro signal 
 
@@ -91,12 +91,15 @@ begin
 
   if ck25MHz'event and ck25MHz='1' then
     if intHcnt=PLD-1 then
-       intHcnt<=0;
-      if intVcnt=LFD-1 then intVcnt<=0;
-      else intVcnt<=intVcnt+1;
-      end if;
-    else intHcnt<=intHcnt+1;
+        intHcnt<=0;
+    if intVcnt=LFD-1 then
+		intVcnt<=0;
+    else
+		intVcnt<=intVcnt+1;
     end if;
+  else
+	intHcnt<=intHcnt+1;
+  end if;
 	
 	-- Generates HS - active low
 	if intHcnt=PAL-1+HFP then 

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica9/Basys2UserDemo.xst" -ofn "C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica9/Basys2UserDemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 Basys2UserDemo.ngc Basys2UserDemo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Basys2UserDemo_map.ncd Basys2UserDemo.ngd Basys2UserDemo.pcf 
+par -w -intstyle ise -ol high -mt off Basys2UserDemo_map.ncd Basys2UserDemo.ncd Basys2UserDemo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Basys2UserDemo.twx Basys2UserDemo.ncd -o Basys2UserDemo.twr Basys2UserDemo.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f Basys2UserDemo.ut Basys2UserDemo.ncd 
