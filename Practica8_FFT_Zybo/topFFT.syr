@@ -1,0 +1,498 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: topFFT.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "topFFT.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "topFFT"
+Output Format                      : NGC
+Target Device                      : xc7z010-1-clg400
+
+---- Source Options
+Top Module Name                    : topFFT
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT_Zybo\ipcore_dir\ipSQRT.vhd" into library work
+Parsing entity <ipSQRT>.
+Parsing architecture <ipSQRT_a> of entity <ipsqrt>.
+Parsing VHDL file "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT_Zybo\ipcore_dir\ipFFT.vhd" into library work
+Parsing VHDL file "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT_Zybo\topFFT.vhd" into library work
+Parsing entity <topFFT>.
+Parsing architecture <Behavioral> of entity <topfft>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <topFFT> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:89 - "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT_Zybo\topFFT.vhd" Line 39: <ipfft> remains a black-box since it has no binding entity.
+
+Elaborating entity <ipSQRT> (architecture <ipSQRT_a>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <topFFT>.
+    Related source file is "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT_Zybo\topFFT.vhd".
+        BUS_WIDTH = 8
+        SAMPLES_WIDTH = 10
+INFO:Xst:3210 - "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT_Zybo\topFFT.vhd" line 98: Output port <xn_index> of the instance <fftInstantiation> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT_Zybo\topFFT.vhd" line 98: Output port <edone> of the instance <fftInstantiation> is unconnected or connected to loadless signal.
+    Found 17-bit adder for signal <stdSum> created at line 92.
+    Found 8x8-bit multiplier for signal <xre2> created at line 89.
+    Found 9x9-bit multiplier for signal <n0015> created at line 90.
+    Summary:
+	inferred   2 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <topFFT> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 2
+ 8x8-bit multiplier                                    : 1
+ 9x9-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 1
+ 17-bit adder                                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/ipFFT.ngc>.
+Reading Secure Unit <blk00000135>.
+Reading core <ipcore_dir/ipSQRT.ngc>.
+Reading Secure Unit <blk00000016>.
+Loading core <ipFFT> for timing and area information for instance <fftInstantiation>.
+Loading core <ipSQRT> for timing and area information for instance <sqrtInstantiation>.
+INFO:Xst:1901 - Instance blk00000114 in unit blk00000114 of type RAMB18 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance blk00000431 in unit blk00000431 of type DSP48E has been replaced by DSP48E1
+INFO:Xst:1901 - Instance blk00000432 in unit blk00000432 of type DSP48E has been replaced by DSP48E1
+INFO:Xst:1901 - Instance blk00000433 in unit blk00000433 of type DSP48E has been replaced by DSP48E1
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 2
+ 8x8-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 1
+ 17-bit adder                                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <topFFT> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block topFFT, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : topFFT.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 437
+#      GND                         : 8
+#      INV                         : 9
+#      LUT1                        : 2
+#      LUT2                        : 38
+#      LUT3                        : 110
+#      LUT4                        : 63
+#      LUT5                        : 25
+#      LUT6                        : 87
+#      MUXCY                       : 41
+#      MUXF7                       : 20
+#      MUXF8                       : 10
+#      VCC                         : 4
+#      XORCY                       : 20
+# FlipFlops/Latches                : 553
+#      FD                          : 11
+#      FDE                         : 264
+#      FDRE                        : 265
+#      FDS                         : 2
+#      FDSE                        : 11
+# RAMS                             : 2
+#      RAMB18E1                    : 2
+# Shift Registers                  : 83
+#      SRL16E                      : 70
+#      SRLC16E                     : 13
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 37
+#      IBUF                        : 14
+#      OBUF                        : 23
+# DSPs                             : 5
+#      DSP48E1                     : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z010clg400-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             553  out of  35200     1%  
+ Number of Slice LUTs:                  417  out of  17600     2%  
+    Number used as Logic:               334  out of  17600     1%  
+    Number used as Memory:               83  out of   6000     1%  
+       Number used as SRL:               83
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    727
+   Number with an unused Flip Flop:     174  out of    727    23%  
+   Number with an unused LUT:           310  out of    727    42%  
+   Number of fully used LUT-FF pairs:   243  out of    727    33%  
+   Number of unique control sets:        17
+
+IO Utilization: 
+ Number of IOs:                          38
+ Number of bonded IOBs:                  38  out of    100    38%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     60     1%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of     80     1%  
+ Number of DSP48E1s:                      5  out of     80     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 667   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------+-------+
+Control Signal                                                                                 | Buffer(FF name)                                           | Load  |
+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------+-------+
+fftInstantiation/blk00000102/blk00000114/N0(fftInstantiation/blk00000102/blk00000114/XST_GND:G)| NONE(fftInstantiation/blk00000102/blk00000114/blk00000114)| 6     |
+fftInstantiation/sig00000002(fftInstantiation/blk00000002:G)                                   | NONE(fftInstantiation/blk00000405)                        | 6     |
+fftInstantiation/blk00000102/blk00000114/N1(fftInstantiation/blk00000102/blk00000114/XST_VCC:P)| NONE(fftInstantiation/blk00000102/blk00000114/blk00000114)| 4     |
+fftInstantiation/sig00000001(fftInstantiation/blk00000001:P)                                   | NONE(fftInstantiation/blk00000405)                        | 4     |
+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 13.321ns (Maximum Frequency: 75.069MHz)
+   Minimum input arrival time before clock: 1.773ns
+   Maximum output required time after clock: 0.766ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 13.321ns (frequency: 75.069MHz)
+  Total number of paths / destination ports: 738987662 / 1048
+-------------------------------------------------------------------------
+Delay:               13.321ns (Levels of Logic = 71)
+  Source:            sqrtInstantiation/blk00000007 (FF)
+  Destination:       sqrtInstantiation/blk000000ef (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: sqrtInstantiation/blk00000007 to sqrtInstantiation/blk000000ef
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              6   0.282   0.635  blk00000007 (sig00000074)
+     LUT3:I0->O            2   0.053   0.491  blk00000102 (sig0000004c)
+     begin scope: 'sqrtInstantiation/blk00000088:A<2>'
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.291   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out          14   0.320   0.498  sec_inst (sec_net)
+     end scope: 'sqrtInstantiation/blk00000088:S<5>'
+     LUT3:I2->O            1   0.053   0.413  blk000000fe (sig0000005a)
+     begin scope: 'sqrtInstantiation/blk0000004f:A<2>'
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.291   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out          14   0.320   0.498  sec_inst (sec_net)
+     end scope: 'sqrtInstantiation/blk0000004f:S<6>'
+     LUT3:I2->O            2   0.053   0.419  blk00000100 (sig0000005f)
+     begin scope: 'sqrtInstantiation/blk00000016:A<2>'
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.291   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out          15   0.320   0.505  sec_inst (sec_net)
+     end scope: 'sqrtInstantiation/blk00000016:S<7>'
+     LUT3:I2->O            1   0.053   0.413  blk000000f4 (sig0000004a)
+     begin scope: 'sqrtInstantiation/blk00000031:A<2>'
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.291   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out          14   0.320   0.498  sec_inst (sec_net)
+     end scope: 'sqrtInstantiation/blk00000031:S<8>'
+     LUT3:I2->O            2   0.053   0.419  blk000000f1 (sig0000003d)
+     begin scope: 'sqrtInstantiation/blk00000067:A<2>'
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.291   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out          18   0.320   0.525  sec_inst (sec_net)
+     end scope: 'sqrtInstantiation/blk00000067:S<9>'
+     LUT3:I2->O            1   0.053   0.413  blk000000f7 (sig00000029)
+     begin scope: 'sqrtInstantiation/blk0000009c:A<2>'
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.291   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out          11   0.320   0.479  sec_inst (sec_net)
+     end scope: 'sqrtInstantiation/blk0000009c:S<10>'
+     LUT3:I2->O            1   0.053   0.413  blk000000fc (sig00000014)
+     begin scope: 'sqrtInstantiation/blk000000c0:A<2>'
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.291   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.320   0.399  sec_inst (sec_net)
+     end scope: 'sqrtInstantiation/blk000000c0:S<11>'
+     INV:I->O              1   0.067   0.399  blk0000011d (sig0000004f)
+     FDE:D                     0.011          blk000000ef
+    ----------------------------------------
+    Total                     13.321ns (5.904ns logic, 7.417ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 721 / 709
+-------------------------------------------------------------------------
+Offset:              1.773ns (Levels of Logic = 3)
+  Source:            FFT_CE (PAD)
+  Destination:       fftInstantiation/blk00000405 (RAM)
+  Destination Clock: CLK rising
+
+  Data Path: FFT_CE to fftInstantiation/blk00000405
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           545   0.000   0.742  FFT_CE_IBUF (FFT_CE_IBUF)
+     begin scope: 'fftInstantiation:ce'
+     LUT2:I0->O           22   0.053   0.535  blk000003b2 (sig000002df)
+     RAMB18E1:ENARDEN          0.443          blk00000405
+    ----------------------------------------
+    Total                      1.773ns (0.496ns logic, 1.277ns route)
+                                       (28.0% logic, 72.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 23 / 23
+-------------------------------------------------------------------------
+Offset:              0.766ns (Levels of Logic = 2)
+  Source:            fftInstantiation/blk000003d8 (FF)
+  Destination:       FFT_RFD (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: fftInstantiation/blk000003d8 to FFT_RFD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              14   0.282   0.484  blk000003d8 (rfd)
+     end scope: 'fftInstantiation:rfd'
+     OBUF:I->O                 0.000          FFT_RFD_OBUF (FFT_RFD)
+    ----------------------------------------
+    Total                      0.766ns (0.282ns logic, 0.484ns route)
+                                       (36.8% logic, 63.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |   13.321|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.44 secs
+ 
+--> 
+
+Total memory usage is 463944 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

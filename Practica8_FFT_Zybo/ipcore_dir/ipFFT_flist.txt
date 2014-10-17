@@ -1,0 +1,14 @@
+# Output products list for <ipFFT>
+ipFFT.asy
+ipFFT.gise
+ipFFT.ngc
+ipFFT.sym
+ipFFT.vhd
+ipFFT.vho
+ipFFT.xco
+ipFFT.xise
+ipFFT\doc\xfft_ds260.pdf
+ipFFT\doc\xfft_v7_1_readme.txt
+ipFFT\doc\xfft_v7_1_vinfo.html
+ipFFT_flist.txt
+ipFFT_xmdf.tcl

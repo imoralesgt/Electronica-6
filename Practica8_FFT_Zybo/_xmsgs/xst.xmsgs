@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT_Zybo\topFFT.vhd" Line 39: &lt;<arg fmt="%s" index="1">ipfft</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT_Zybo\topFFT.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">xn_index</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fftInstantiation</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Ivan\Documents\GitHub\Electronica-6\Practica8_FFT_Zybo\topFFT.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">edone</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fftInstantiation</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">blk00000114</arg> in unit <arg fmt="%s" index="2">blk00000114</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">blk00000431</arg> in unit <arg fmt="%s" index="2">blk00000431</arg> of type <arg fmt="%s" index="3">DSP48E</arg> has been replaced by <arg fmt="%s" index="4">DSP48E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">blk00000432</arg> in unit <arg fmt="%s" index="2">blk00000432</arg> of type <arg fmt="%s" index="3">DSP48E</arg> has been replaced by <arg fmt="%s" index="4">DSP48E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">blk00000433</arg> in unit <arg fmt="%s" index="2">blk00000433</arg> of type <arg fmt="%s" index="3">DSP48E</arg> has been replaced by <arg fmt="%s" index="4">DSP48E1</arg>
+</msg>
+
+</messages>
+

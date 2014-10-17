@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica8_FFT_Zybo/topFFT.xst" -ofn "C:/Users/Ivan/Documents/GitHub/Electronica-6/Practica8_FFT_Zybo/topFFT.syr" 
